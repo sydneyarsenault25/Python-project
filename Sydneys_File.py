@@ -1,10 +1,7 @@
-scoremusic = 0
-scoresports = 0
-scoremovies = 0
 score = 0
-
 catpick = input("Welcome to Trvia Night!! Pick one olf the three following categories: \n  - Music \n  - Sports \n  - Movies")
 if catpick == "Music":
+<<<<<<< HEAD
     print("You've selected music. Get ready to guess the answers based on their descriptions and your knowledge of fun facts!")
     print("Great! Time for the first question. \n Enter answers with proper capitalization and, if there is a double-answer, enter your answers as X, Y.")
     music_questions = {
@@ -70,3 +67,22 @@ elif catpick == "Movies":
             print ("Incorrect")
             print()
 
+=======
+    categories1 == True and questions1 == True
+    categories2 == False and questions2 == False
+    categories3 == False and questions3 == False
+    print("You've selected Music. Get ready to guess songs based on their lyrics!")
+    print("Great! Time for the first question. \n Enter answers with proper capitalization and, if there is a double-answer, enter your answers as X, Y.")
+    q1music = input("XXX lyrics are from the song _____ by _____.")
+    a1music = "ANSWER"
+    if q1music == a1music:
+        score += 1
+
+elif catpick == "Sports":
+    categories2 == True and questions2 == True
+    categories1 == False and questions1 == False
+    categories3 == False and questions3 == False
+    print("You've selected sports. Get ready to show off your sports knowledge!")
+    print("Great! Time for the first question. \n Enter answers with proper capitalization and, if there is a double-answer, enter your answers as X, Y.")
+
+>>>>>>> 1a4b441f403582a5d7b0504f4684e007076cfaf2
