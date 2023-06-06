@@ -1,7 +1,13 @@
 score = 0
+scoremusic = 0
+scoresports = 0
+scoremovies = 0
+highscoremusic = []
+highscoremovies = []
+highscoresports = []
+
 catpick = input("Welcome to Trvia Night!! Pick one olf the three following categories: \n  - Music \n  - Sports \n  - Movies")
 if catpick == "Music":
-<<<<<<< HEAD
     print("You've selected music. Get ready to guess the answers based on their descriptions and your knowledge of fun facts!")
     print("Great! Time for the first question. \n Enter answers with proper capitalization and, if there is a double-answer, enter your answers as X, Y.")
     music_questions = {
@@ -12,7 +18,7 @@ if catpick == "Music":
         "Which female singer released 'Rolling in the Deep? " : "Adele",
         "Which singer is a godmother to Elton John's two sons? " : "Lady Gaga"
     }
-    for question, answer in mu.items():
+    for question, answer in music_questions.items():
         guess = input (question + ": ")
         if guess == answer:
             print ("Correct")
@@ -22,6 +28,7 @@ if catpick == "Music":
         else:
             print ("Incorrect")
             print()
+    highscoremusic.append(scoremusic)
 
 elif catpick == "Sports":
     print("You've selected sports. Get ready to guess the answers based on their descriptions and your knowledge of fun facts!")
@@ -44,6 +51,7 @@ elif catpick == "Sports":
         else:
             print ("Incorrect")
             print()
+    highscoresports.append(scoresports)
 
 elif catpick == "Movies":
     print("You've selected moveis. Get ready to guess the movie and actor facts based on their descriptions and fun facts!")
@@ -66,6 +74,7 @@ elif catpick == "Movies":
         else:
             print ("Incorrect")
             print()
+    highscoremovies.append(scoremovies)
 
 
 
